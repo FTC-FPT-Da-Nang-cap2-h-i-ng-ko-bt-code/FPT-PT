@@ -1,244 +1,178 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FPT PT Robotics | FTC 23321 & 28668</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-
-<style>
-:root{
-    --primary-orange:#ff7a2f;
-}
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Inter,sans-serif;
-}
-
-body{
-    background:#f5f6f8;
-    color:#111;
-}
-
-/* NAV */
-nav{
-    display:flex;
-    justify-content:space-between;
-    padding:20px 8%;
-    background:white;
-    position:sticky;
-    top:0;
-}
-
-.nav-links{
-    list-style:none;
-    display:flex;
-    gap:20px;
-}
-
-.nav-links a{
-    text-decoration:none;
-    color:black;
-    font-weight:600;
-}
-
-/* HERO */
-.hero{
-    text-align:center;
-    padding:100px 20px;
-}
-
-.hero h1{
-    font-size:50px;
-}
-
-.hero span{
-    color:var(--primary-orange);
-}
-
-/* BUTTON */
-.btn{
-    padding:12px 20px;
-    border-radius:10px;
-    text-decoration:none;
-    margin:10px;
-    display:inline-block;
-}
-
-.primary{
-    background:var(--primary-orange);
-    color:white;
-}
-
-.secondary{
-    border:2px solid var(--primary-orange);
-    color:var(--primary-orange);
-}
-
-/* CARD */
-.teams-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-    padding:50px 10%;
-}
-
-.team-card{
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 15px 40px rgba(0,0,0,0.08);
-    transition:0.3s;
-}
-
-.team-card:hover{
-    transform:translateY(-10px);
-}
-
-.team-number{
-    font-size:40px;
-    font-weight:800;
-    color:var(--primary-orange);
-}
-
-/* REVEAL */
-.reveal{
-    opacity:0;
-    transform:translateY(60px);
-    transition:0.8s;
-}
-
-.reveal.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-/* HOVER TEXT WORD */
-.hover-text span{
-    display:inline-block;
-    margin-right:6px;
-    transition:0.25s;
-}
-
-.hover-text span:hover{
-    transform:translateY(-8px) scale(1.15);
-    color:var(--primary-orange);
-}
-
-/* DETAIL */
-.detail{
-    padding:60px 10%;
-    display:flex;
-    gap:40px;
-    align-items:center;
-    flex-wrap:wrap;
-}
-
-.detail img{
-    width:350px;
-    border-radius:20px;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    padding:40px;
-    background:white;
-    margin-top:40px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT PT Robotics | FTC 23321 & 28668</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/23321team.css">
+    <script src="/js/effectCss.js" defer></script>
 </head>
-
 <body>
+    <nav>
+        <div class="logo">FPT PT <span style="color: var(--primary-orange);">ROBOTICS</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#teams">TEAM</a></li>
+            <li><a href="#contact" class="nav-btn">CONTACT</a></li>
+        </ul>
+    </nav>
 
-<nav>
-<div><strong>FPT PT <span style="color:var(--primary-orange)">ROBOTICS</span></strong></div>
-<ul class="nav-links">
-<li><a href="#teams">TEAM</a></li>
-<li><a href="#contact">CONTACT</a></li>
-</ul>
-</nav>
+    <section class="hero" id="home">
+        <img src="/assets/BigBackground23321.jpg" alt="big-background" class="hero-bg">
+        <div class="hero-content">
+            <span class="badge">FIRST Tech Challenge Vietnam</span>
+            <h1>TEAM <span>FPT PT 1</span></h1>
+            <p class="hover-text">A house of creativity and innovation , we are more than robotics 💫</p>
+            <div class="hero-btns">
+                <a href="#members" class="btn primary">about members</a>
+                <a href="#achievements" class="btn secondary">about achievements</a>
+            </div>
+        </div>
+    </section>
+    <section class="member" id="members">
+    <h2 class="section-title">MEMBERS</h2>
 
-<section class="hero">
-<h1>TEAM <span>FPT PT</span></h1>
-<p class="hover-text">A house of creativity and innovation , we are more than robotics 💫</p>
+    <div id="member">
+        <h3>CAPTAIN</h3>
 
-<a href="#team23321" class="btn primary">about 23321</a>
-<a href="#team28668" class="btn secondary">about 28668</a>
+        <div class="members-container">
+            <div class="member-card reveal">
+                <img src="/assets/bach.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Trần Nguyên Bách</h4>
+                    <ul class="team-features">
+                        <li>✓ Designer Engineer</li>
+                        <li>✓ Vex IQ 22-23 Vietnam champion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="member">
+        <h3>VICE CAPTAIN</h3>
+
+        <div class="members-container">
+            <div class="member-card reveal">
+                <img src="/assets/bach.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Nguyễn Lê Khải Hưng</h4>
+                    <ul class="team-features">
+                        <li>✓ Coder, Media</li>
+                        <li>✓ Top 2 Olympics Coding</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="member">
+        <h3>MECHANICAL</h3>
+
+        <div class="members-container">
+            <div class="member-card reveal">
+                <img src="/assets/bach.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Trần Nguyên Bách</h4>
+                    <ul class="team-features">
+                        <li>✓ Designer Engineer</li>
+                        <li>✓ Vex IQ 22-23 Vietnam champion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="member-card reveal">
+                <img src="/assets/minh-huy.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Nguyễn Phan Minh Huy</h4>
+                    <ul class="team-features">
+                        <li>✓ Designer Engineer</li>
+                        <li>✓ Top 10 Global Enjoy AI</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="member-card reveal">
+                <img src="/assets/minh-huy.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Nguyễn Gia Huy</h4>
+                    <ul class="team-features">
+                        <li>✓ Mechanics</li>
+                        <li>✓ Da Nang Basketball champion</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="member-card reveal">
+                <img src="/assets/minh-huy.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Nguyễn Đăng Khoa</h4>
+                    <ul class="team-features">
+                        <li>✓ Mechanics</li>
+                        <li>✓ Top 2 Vex IQ Central Regional</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="member-card reveal">
+                <img src="/assets/minh-huy.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Hoàng Thành Long</h4>
+                    <ul class="team-features">
+                        <li>✓ Mechanics</li>
+                        <li>✓ Pro Free Fire Player</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="member-card reveal">
+                <img src="/assets/minh-huy.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Wealuvan Tùng Lâm</h4>
+                    <ul class="team-features">
+                        <li>✓ Mechanics</li>
+                        <li>✓ Top 10 Enjoy AI Vietnam</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="member">
+        <h3>CODER</h3>
+
+        <div class="members-container">
+            <div class="member-card reveal">
+                <img src="/assets/bach.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Nguyễn Lê Khải Hưng</h4>
+                    <ul class="team-features">
+                        <li>✓ Coder, Media</li>
+                        <li>✓ Top 2 Olympics Coding</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="member-card reveal">
+                <img src="/assets/bach.jpg", alt="member">
+                <div id="member-box">
+                    <h4>Trần Hải Minh</h4>
+                    <ul class="team-features">
+                        <li>✓ Coder</li>
+                        <li>✓ Vibe coder</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-<section id="teams">
-<div class="teams-container">
-
-<div class="team-card reveal">
-<div class="team-number">23321</div>
-<h3>FPT PT 1</h3>
-<p>Autonomous & Mechanical Specialist</p>
-</div>
-
-<div class="team-card reveal">
-<div class="team-number">28668</div>
-<h3>FPT PT 2</h3>
-<p>Hardware Design & Precision Engineering</p>
-</div>
-
-</div>
-</section>
-
-<section class="detail reveal" id="team23321">
-<img src="assets/Team23321.jpg" alt="23321">
-<div>
-<h2>Team 23321</h2>
-<p>Đội FPT PT 1 là tập thể mạnh về cơ khí và lập trình, đạt nhiều giải thưởng quốc tế và không ngừng phát triển.</p>
-</div>
-</section>
-
-<section class="detail reveal" id="team28668">
-<div>
-<h2>Team 28668</h2>
-<p>Đội FPT PT 2 nổi bật về thiết kế phần cứng và kỹ thuật, luôn đổi mới công nghệ robot.</p>
-</div>
-<img src="assets/Team28668.jpg" alt="team28668">
-</section>
-
-<footer id="contact">
-<p><strong>FPT PT Robotics</strong></p>
-<p>Email: Billy.gaming2012@gmail.com</p>
-<p>Phone: +84 0346535304</p>
-</footer>
-
-<script>
-
-/* luôn load về top */
-history.scrollRestoration="manual";
-window.onload=()=>window.scrollTo(0,0);
-
-/* reveal scroll */
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(e=>{
-if(e.isIntersecting) e.target.classList.add("show");
-else e.target.classList.remove("show");
-});
-},{threshold:0.2});
-
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-
-/* hover text word */
-document.querySelectorAll(".hover-text").forEach(el=>{
-const words=el.textContent.split(" ");
-el.innerHTML="";
-words.forEach(w=>{
-const span=document.createElement("span");
-span.textContent=w;
-el.appendChild(span);
-});
-});
-
-</script>
+    <footer>
+        <div class="footer-content">
+            <p><strong>FPT PT Robotics</strong></p>
+            <p>Đại diện FTC 23321 & 28668</p>
+            <div class="social-links">
+                <p id="contact">
+                    Facebook: FPT PT<br>
+                    Email: Billy.gaming2012@gmail.com<br>
+                    Phone: +84 0346535304
+                </p>
+                </div>
+            <hr>
+            <p class="copyright">© 2024 - Thiết kế dành cho FPT PT Robotics</p>
+        </div>
+    </footer>
 
 </body>
 </html>
